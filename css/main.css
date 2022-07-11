@@ -76,6 +76,8 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding-left: 0;
+    padding-right: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -570,7 +572,9 @@ img {
 }
 @media screen and (min-width: 768px) {
   .teammates-items__list {
-    width: calc((100% - 60px) / 2);
+    max-width: 768px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
   }
 }
 
