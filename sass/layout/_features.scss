@@ -1,21 +1,25 @@
-.features {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+// .features {
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+// }
 
 .feature {
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    // max-width: 768px;
 
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: center;
+    // justify-content: center;
   }
 
   &__item-list {
     @media screen and (min-width: 768px) {
-      width: calc((100% - 2 * 30px) / 2);
+      width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      // max-width: 1200px;
+      width: calc((100% - 90px) / 4);
     }
   }
 }
@@ -70,4 +74,7 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
 }
