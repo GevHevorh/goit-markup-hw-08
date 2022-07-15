@@ -41,7 +41,7 @@
           </ul>
         </nav>
         <ul class="header-contacts">
-          <li class="mail-icon">
+          <li class="contacts-icon">
             <a
               href="mailto:info@devstudio.com"
               class="contact-list-header link"
@@ -52,7 +52,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="contacts-icon">
             <a href="tel:+380961111111" class="contact-list-header link">
               <svg class="phone-header-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
@@ -61,6 +61,60 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open-btn">o</button>
+      </div>
+      <div class="mob-menu">
+        <div class="container">
+        <button type="button" class="menu-close-btn">X</button>
+        <ul class="mob-menu-list">
+            <li class="mob-menu__item">
+              <a href="./index.html" class="mob-menu__link link current">Студия</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="./portfolio.html" class="mob-menu__link link">Портфолио</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="" class="mob-menu__link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="mob-menu__contacts">
+          <li class="mob-menu__connect">
+            <a href="tel:+380961111111" class="mob-menu__call link">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mob-menu__connect">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mob-menu__mail link"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <div class="mob-menu-soc">
+          <ul class="mob-menu-soc__list">
+            <li class="mob-menu-soc__item">
+              <a href="" class="mob-menu-soc__link link">Instagram
+              </a>
+            </li>
+            <li class="mob-menu-soc__item">
+              <a href="" class="mob-menu-soc__link link">Twitter
+              </a>
+            </li>
+            <li class="mob-menu-soc__item">
+              <a href="" class="mob-menu-soc__link link">Facebook
+              </a>
+            </li>
+            <li class="mob-menu-soc__item">
+              <a href="" class="mob-menu-soc__link link">LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+        </div>
+
       </div>
     </header>
     <!--Герой-->
@@ -136,7 +190,8 @@
           <ul class="pic-items">
             <li class="pic-items__img">
               <img
-                src="./images/1.jpg"
+                srcset="./images/tablet.jpg 1x, ./images/tablet-2x.jpg 2x"
+                src="./images/tablet.jpg"
                 width="370"
                 height="294"
                 alt="две руки на клавиатуре,лист со схемой,монитор,планшет,очки,блокнот"
@@ -145,7 +200,8 @@
             </li>
             <li class="pic-items__img">
               <img
-                src="./images/2.jpg"
+                srcset="./images/mobile.jpg 1x, ./images/mobile-2x.jpg 2x"
+                src="./images/mobile.jpg"
                 width="370"
                 height="294"
                 alt="создание макета мобильной версии сайта"
@@ -154,7 +210,8 @@
             </li>
             <li class="pic-items__img">
               <img
-                src="./images/3.jpg"
+                srcset="./images/design.jpg 1x, ./images/design-2x.jpg 2x"
+                src="./images/design.jpg"
                 width="370"
                 height="294"
                 alt="стилус и планшет с палитрой в руках на фоне клавиатуры и компьютера"
@@ -171,6 +228,10 @@
           <ul class="teammates-items">
             <li class="teammates-items__list">
               <img
+                srcset="
+                  ./images/product_designer.jpg    1x,
+                  ./images/product_designer-2x.jpg 2x
+                "
                 src="./images/product_designer.jpg"
                 width="270"
                 height="260"
@@ -213,6 +274,10 @@
             </li>
             <li class="teammates-items__list">
               <img
+                srcset="
+                  ./images/frontend_dev.jpg    1x,
+                  ./images/frontend_dev-2x.jpg 2x
+                "
                 src="./images/frontend_dev.jpg"
                 width="270"
                 height="260"
@@ -255,6 +320,7 @@
             </li>
             <li class="teammates-items__list">
               <img
+                srcset="./images/marketing.jpg 1x, ./images/marketing-2x.jpg 2x"
                 src="./images/marketing.jpg"
                 width="270"
                 height="260"
@@ -297,6 +363,10 @@
             </li>
             <li class="teammates-items__list">
               <img
+                srcset="
+                  ./images/ul_designer.jpg    1x,
+                  ./images/ul_designer-2x.jpg 2x
+                "
                 src="./images/ul_designer.jpg"
                 width="270"
                 height="260"
