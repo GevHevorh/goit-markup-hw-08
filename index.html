@@ -61,12 +61,20 @@
             >
           </li>
         </ul>
-        <button type="button" class="menu-open-btn">o</button>
+        <button type="button" class="menu-open-btn">
+          <svg class="mob-menu-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-mob-menu"></use>
+          </svg>
+        </button>
       </div>
       <div class="mob-menu is-hidden">
         <div class="container">
           <div class="mob-menu__top">
-            <button type="button" class="menu-close-btn">X</button>
+            <button type="button" class="menu-close-btn">
+              <svg class="mob-menu-close-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-mob-menu-close"></use>
+          </svg>
+            </button>
             <ul class="mob-menu-list">
               <li class="mob-menu__item">
                 <a href="./index.html" class="mob-menu__link link current">Студия</a>
@@ -193,33 +201,54 @@
           <h2 class="about-title">Чем мы занимаемся</h2>
           <ul class="pic-items">
             <li class="pic-items__img">
-              <img
-                srcset="./images/tablet.jpg 1x, ./images/tablet-2x.jpg 2x"
-                src="./images/tablet.jpg"
-                width="370"
-                height="294"
-                alt="две руки на клавиатуре,лист со схемой,монитор,планшет,очки,блокнот"
-              />
+              <picture>
+                <source srcset="
+                    ./images/index/works/desktops.jpg    1x,
+                    ./images/index/works/desktops-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  >
+                 <img
+                    src="./images/tablet.jpg"
+                    width="370"
+                    height="294"
+                    alt="две руки на клавиатуре,лист со схемой,монитор,планшет,очки,блокнот"
+                  />
+              </picture>
               <p class="pic-items__caption">Десктопные приложения</p>
             </li>
             <li class="pic-items__img">
-              <img
-                srcset="./images/mobile.jpg 1x, ./images/mobile-2x.jpg 2x"
-                src="./images/mobile.jpg"
-                width="370"
-                height="294"
-                alt="создание макета мобильной версии сайта"
-              />
+              <picture>
+                <source srcset="
+                    ./images/index/works/mobiles.jpg    1x,
+                    ./images/index/works/mobiles-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  >
+                 <img
+                    src="./images/index/works/mobiles.jpg"
+                    width="370"
+                    height="294"
+                    alt="две руки на клавиатуре,лист со схемой,монитор,планшет,очки,блокнот"
+                  />
+              </picture>
               <p class="pic-items__caption">Мобильные приложения</p>
             </li>
             <li class="pic-items__img">
-              <img
-                srcset="./images/design.jpg 1x, ./images/design-2x.jpg 2x"
-                src="./images/design.jpg"
-                width="370"
-                height="294"
-                alt="стилус и планшет с палитрой в руках на фоне клавиатуры и компьютера"
-              />
+              <picture>
+                <source srcset="
+                    ./images/index/works/design.jpg    1x,
+                    ./images/index/works/design-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  >
+                <img
+                  src="./images/index/works/design.jpg "
+                  width="370"
+                  height="294"
+                  alt="стилус и планшет с палитрой в руках на фоне клавиатуры и компьютера"
+                />
+              </picture>
               <p class="pic-items__caption">Дизайнерские решения</p>
             </li>
           </ul>
@@ -231,16 +260,34 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="teammates-items">
             <li class="teammates-items__list">
-              <img
-                srcset="
-                  ./images/product_designer.jpg    1x,
-                  ./images/product_designer-2x.jpg 2x
-                "
-                src="./images/product_designer.jpg"
-                width="270"
-                height="260"
-                alt="мужчина бородатый в очках в бордовой рубашке"
-              />
+              <picture>
+                  <source srcset="
+                    ./images/index/team/desktop/designer.jpg    1x,
+                    ./images/index/team/desktop/designer-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  >
+                  <source srcset="
+                    ./images/index/team/tablet/designer-tab.jpg    1x,
+                    ./images/index/team/tablet/designer-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  >
+                  <source srcset="
+                    ./images/index/team/mobile/designer-mob.jpg    1x,
+                    ./images/index/team/mobile/designer-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                  >
+                  <img
+                  
+                  src="./images/index/team/desktop/designer.jpg"
+                  width="270"
+                  height="260"
+                  alt="мужчина бородатый в очках в бордовой рубашке"
+                />
+              </picture>
+              
               <div class="caption-job">
                 <h3 class="caption">Игорь Демьяненко</h3>
                 <p lang="en" class="job-title">Product Designer</p>
@@ -277,16 +324,32 @@
               </ul>
             </li>
             <li class="teammates-items__list">
-              <img
-                srcset="
-                  ./images/frontend_dev.jpg    1x,
-                  ./images/frontend_dev-2x.jpg 2x
-                "
-                src="./images/frontend_dev.jpg"
+              <picture>
+                <source srcset="
+                      ./images/index/team/desktop/frontend.jpg    1x,
+                      ./images/index/team/desktop/frontend-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  >
+                  <source srcset="
+                    ./images/index/team/tablet/frontend-tab.jpg    1x,
+                    ./images/index/team/tablet/frontend-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  >
+                  <source srcset="
+                    ./images/index/team/mobile/frontend-mob.jpg    1x,
+                    ./images/index/team/mobile/frontend-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                  >
+                  <img
+                src="./images/index/team/desktop/frontend.jpg"
                 width="270"
                 height="260"
                 alt="девушка блондинка в очках и пиджаке"
-              />
+                />
+              </picture>
               <div class="caption-job">
                 <h3 class="caption">Ольга Репина</h3>
                 <p lang="en" class="job-title">Frontend Developer</p>
@@ -323,13 +386,32 @@
               </ul>
             </li>
             <li class="teammates-items__list">
-              <img
-                srcset="./images/marketing.jpg 1x, ./images/marketing-2x.jpg 2x"
-                src="./images/marketing.jpg"
-                width="270"
-                height="260"
-                alt="светлый мужчина в светлой рубашке"
-              />
+              <picture>
+                 <source srcset="
+                      ./images/index/team/desktop/marketing.jpg    1x,
+                      ./images/index/team/desktop/marketing-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  >
+                  <source srcset="
+                    ./images/index/team/tablet/marketing-tab.jpg    1x,
+                    ./images/index/team/tablet/marketing-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  >
+                  <source srcset="
+                    ./images/index/team/mobile/marketing-mob.jpg    1x,
+                    ./images/index/team/mobile/marketing-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                  >
+                  <img
+                  src="./images/index/team/desktop/marketing.jpg"
+                  width="270"
+                  height="260"
+                  alt="светлый мужчина в светлой рубашке"
+                  />
+                </picture>
               <div class="caption-job">
                 <h3 class="caption">Николай Тарасов</h3>
                 <p lang="en" class="job-title">Marketing</p>
@@ -366,16 +448,33 @@
               </ul>
             </li>
             <li class="teammates-items__list">
-              <img
-                srcset="
-                  ./images/ul_designer.jpg    1x,
-                  ./images/ul_designer-2x.jpg 2x
-                "
-                src="./images/ul_designer.jpg"
-                width="270"
-                height="260"
-                alt="мужчина брюнет в очках бородатый"
-              />
+              <picture>
+                <source srcset="
+                    ./images/index/team/desktop/ui.jpg    1x,
+                    ./images/index/team/desktop/ui-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  >
+                  <source srcset="
+                    ./images/index/team/tablet/ui-tab.jpg    1x,
+                    ./images/index/team/tablet/ui-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  >
+                  <source srcset="
+                    ./images/index/team/mobile/ui-mob.jpg    1x,
+                    ./images/index/team/mobile/ui-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                  >
+                  <img
+                    src="./images/index/team/desktop/ui.jpg"
+                    width="270"
+                    height="260"
+                    alt="мужчина брюнет в очках бородатый"
+                  />
+              </picture>
+              
               <div class="caption-job">
                 <h3 class="caption">Михаил Ермаков</h3>
                 <p lang="en" class="job-title">UI Designer</p>

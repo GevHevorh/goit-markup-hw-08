@@ -63,6 +63,73 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open-btn">
+          <svg class="mob-menu-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-mob-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-menu__top">
+            <button type="button" class="menu-close-btn">
+              <svg class="mob-menu-close-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-mob-menu-close"></use>
+          </svg>
+            </button>
+            <ul class="mob-menu-list">
+              <li class="mob-menu__item">
+                <a href="./index.html" class="mob-menu__link link">Студия</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="./portfolio.html" class="mob-menu__link link current">Портфолио</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      <div class="mob-menu__communication">
+        <ul class="mob-menu__contacts">
+          <li class="mob-menu__connect">
+            <a href="tel:+380961111111" class="mob-menu__call link">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mob-menu__connect">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mob-menu__mail link"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <div class="mob-menu-soc">
+          <ul class="mob-menu-soc__list">
+            <li class="mob-menu-soc__item">
+              <a href="" class="mob-menu-soc__link link">Instagram
+              </a>
+            </li>
+            <li class="mob-menu-soc__item">
+              <a href="" class="mob-menu-soc__link link">Twitter
+              </a>
+            </li>
+            <li class="mob-menu-soc__item">
+              <a href="" class="mob-menu-soc__link link">Facebook
+              </a>
+            </li>
+            <li class="mob-menu-soc__item">
+              <a href="" class="mob-menu-soc__link link">LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+        </div>
+
+      </div>
       </div>
     </header>
     <main>
@@ -97,10 +164,34 @@
           <ul class="exemples">
             <li class="exemples__card">
               <div class="exemples-hover-wrap">
-                <img
-                  src="./images/projectsimg/technokriack.jpg"
-                  alt="открытый ноутбук"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/1-project.jpg    1x,
+                      ./images/portfolio/desktop/1-project-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/tablet/1-project-tab.jpg    1x,
+                      ./images/portfolio/tablet/1-project-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/mobile/1-project-mob.jpg    1x,
+                      ./images/portfolio/mobile/1-project-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio/desktop/1-project.jpg"
+                    alt="открытый ноутбук"
+                  />
+                </picture>
+
                 <p class="exemples-hover-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -114,10 +205,33 @@
             </li>
             <li class="exemples__card">
               <div class="exemples-hover-wrap">
-                <img
-                  src="./images/projectsimg/basketposter.jpg"
-                  alt="два баскетболиста борются за мяч"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/2-project.jpg    1x,
+                      ./images/portfolio/desktop/2-project-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/tablet/2-project-tab.jpg    1x,
+                      ./images/portfolio/tablet/2-project-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/mobile/2-project-mob.jpg    1x,
+                      ./images/portfolio/mobile/2-project-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio/desktop/2-project.jpg"
+                    alt="два баскетболиста борются за мяч"
+                  />
+                </picture>
                 <p class="exemples-hover-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -133,10 +247,33 @@
             </li>
             <li class="exemples__card">
               <div class="exemples-hover-wrap">
-                <img
-                  src="./images/projectsimg/restaurantseafood.jpg"
-                  alt="логотип ресторана с нарисованой рыбой на фоне"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/3-project.jpg    1x,
+                      ./images/portfolio/desktop/3-project-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/tablet/3-project-tab.jpg    1x,
+                      ./images/portfolio/tablet/3-project-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/mobile/3-project-mob.jpg    1x,
+                      ./images/portfolio/mobile/3-project-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio/desktop/3-project.jpg"
+                    alt="логотип ресторана с нарисованой рыбой на фоне"
+                  />
+                </picture>
                 <p class="exemples-hover-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -152,10 +289,33 @@
             </li>
             <li class="exemples__card">
               <div class="exemples-hover-wrap">
-                <img
-                  src="./images/projectsimg/primeearpods.jpg"
-                  alt="черные наушники большие"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/4-project.jpg    1x,
+                      ./images/portfolio/desktop/4-project-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/tablet/4-project-tab.jpg    1x,
+                      ./images/portfolio/tablet/4-project-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/mobile/4-project-mob.jpg    1x,
+                      ./images/portfolio/mobile/4-project-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio/desktop/4-project.jpg"
+                    alt="черные наушники большие"
+                  />
+                </picture>
                 <p class="exemples-hover-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -171,10 +331,33 @@
             </li>
             <li class="exemples__card">
               <div class="exemples-hover-wrap">
-                <img
-                  src="./images/projectsimg/boxes.jpg"
-                  alt="две коробки белая и бежевая"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/5-project.jpg    1x,
+                      ./images/portfolio/desktop/5-project-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/tablet/5-project-tab.jpg    1x,
+                      ./images/portfolio/tablet/5-project-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/mobile/5-project-mob.jpg    1x,
+                      ./images/portfolio/mobile/5-project-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio/desktop/5-project.jpg"
+                    alt="две коробки белая и бежевая"
+                  />
+                </picture>
                 <p class="exemples-hover-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -190,10 +373,33 @@
             </li>
             <li class="exemples__card">
               <div class="exemples-hover-wrap">
-                <img
-                  src="./images/projectsimg/inspirationmac.jpg"
-                  alt="imac компьютер на белом фоне"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/6-project.jpg    1x,
+                      ./images/portfolio/desktop/6-project-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/tablet/6-project-tab.jpg    1x,
+                      ./images/portfolio/tablet/6-project-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/mobile/6-project-mob.jpg    1x,
+                      ./images/portfolio/mobile/6-project-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio/desktop/6-project.jpg"
+                    alt="imac компьютер на белом фоне"
+                  />
+                </picture>
                 <p class="exemples-hover-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -209,10 +415,33 @@
             </li>
             <li class="exemples__card">
               <div class="exemples-hover-wrap">
-                <img
-                  src="./images/projectsimg/limitededition.jpg"
-                  alt="открытая книга с фотографиями девушек и текстом"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/7-project.jpg    1x,
+                      ./images/portfolio/desktop/7-project-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/tablet/7-project-tab.jpg    1x,
+                      ./images/portfolio/tablet/7-project-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/mobile/7-project-mob.jpg    1x,
+                      ./images/portfolio/mobile/7-project-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio/desktop/7-project.jpg"
+                    alt="открытая книга с фотографиями девушек и текстом"
+                  />
+                </picture>
                 <p class="exemples-hover-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -228,10 +457,33 @@
             </li>
             <li class="exemples__card">
               <div class="exemples-hover-wrap">
-                <img
-                  src="./images/projectsimg/labproject.jpg"
-                  alt="бирка подвешена на бежевой веревке"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/8-project.jpg    1x,
+                      ./images/portfolio/desktop/8-project-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/tablet/8-project-tab.jpg    1x,
+                      ./images/portfolio/tablet/8-project-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/mobile/8-project-mob.jpg    1x,
+                      ./images/portfolio/mobile/8-project-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio/desktop/8-project.jpg"
+                    alt="бирка подвешена на бежевой веревке"
+                  />
+                </picture>
                 <p class="exemples-hover-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -247,10 +499,33 @@
             </li>
             <li class="exemples__card">
               <div class="exemples-hover-wrap">
-                <img
-                  src="./images/projectsimg/businesgrow.jpg"
-                  alt="открытый ноутбук с руками на клавиатуре"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/9-project.jpg    1x,
+                      ./images/portfolio/desktop/9-project-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/tablet/9-project-tab.jpg    1x,
+                      ./images/portfolio/tablet/9-project-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/mobile/9-project-mob.jpg    1x,
+                      ./images/portfolio/mobile/9-project-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio/desktop/9-project.jpg"
+                    alt="открытый ноутбук с руками на клавиатуре"
+                  />
+                </picture>
                 <p class="exemples-hover-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
